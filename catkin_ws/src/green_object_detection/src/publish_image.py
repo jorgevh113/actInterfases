@@ -35,9 +35,6 @@ def camera_publisher():
         # Publicar el mensaje de imagen en el tópico de ROS
         image_pub.publish(image_msg)
 
-        # Esperar el tiempo suficiente para cumplir con la frecuencia de publicación
-        rate.sleep()
-
     # Liberar los recursos
     cap.release()
 

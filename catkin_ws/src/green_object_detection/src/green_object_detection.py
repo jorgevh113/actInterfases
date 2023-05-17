@@ -2,7 +2,7 @@
 import rospy
 import ctypes
 from sensor_msgs.msg import Image
-from geometry_msgs.msg import Point
+from geometry_msgs.msg import PointStamped
 from cv_bridge import CvBridge
 import cv2
 
@@ -13,7 +13,9 @@ class GreenObjectDetector:
     def __init__(self):
         self.bridge = CvBridge()
         self.image_sub = rospy.Subscriber("/camera/image_raw", Image, self.callback)
-        self.pub_coord = rospy.Publisher("/green_object_coordinates",Point, queue_size=10)
+        self.pub_coord = rospy.Publisher("/green_object_coordinates",PointStamped, queue_size=10)
+        self.coord = PointStamped()
+        self.coord.header.frame_id = "camera_link"
 
     def callback(self, data):
         cv_image = self.bridge.imgmsg_to_cv2(data, "bgr8")
@@ -33,7 +35,12 @@ class GreenObjectDetector:
                 coordY.value = (y+h)/2
                 coordX.value = (x+w)/2
                 coordLibrary.calculateCoords(ctypes.pointer(coordX), ctypes.pointer(coordY), ctypes.pointer(coordZ))
-                self.pub_coord.publish(Point(coordX.value, coordY.value, coordZ.value))
+                
+                self.coord.point.x = coordX.value
+                self.coord.point.y = coordY.value
+                self.coord.point.z = coordZ.value
+                self.coord.header.stamp = rospy.Time.now()
+                self.pub_coord.publish(self.coord)
         cv2.imshow("Green Object Detector", cv_image)
         cv2.waitKey(1)
 
