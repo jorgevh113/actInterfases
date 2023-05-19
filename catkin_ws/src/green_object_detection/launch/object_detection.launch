@@ -1,0 +1,10 @@
+<launch>
+    <!-- Iniciar el nodo publish_image.py -->
+    <node name="publish_image" pkg="green_object_detection" type="publish_image.py" output="screen" />
+
+    <!-- Iniciar el nodo green_object_detection.py -->
+    <node name="green_object_detection" pkg="green_object_detection" type="green_object_detection.py" output="screen" />
+
+    <!-- Iniciar el nodo coordServer.py -->
+    <node name="coord_server" pkg="green_object_detection" type="coordServer.py" output="screen" />
+</launch>
