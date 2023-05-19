@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{E31EAFCB-5B26-4D4B-8AE7-1369C98C9479}|Default">
+  <MonoDevelop.Ide.ItemProperties.csGrpc PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="protos/rpc_demo.proto">
+    <Files>
+      <File FileName="packages.config" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="protos/rpc_demo.proto" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="csGrpc" expanded="True">
+            <Node name="csGrpc" expanded="True">
+              <Node name="protos" expanded="True">
+                <Node name="rpc_demo.proto" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

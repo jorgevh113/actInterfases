@@ -10,23 +10,27 @@ import coord_pb2_grpc
 import rospy
 from geometry_msgs.msg import PointStamped
 
-coords = PointStamped()
+
 
 class Comm(coord_pb2_grpc.CoordsCommServicer):
+    def __init__(self):
+        self.coords = PointStamped()
+        rospy.Subscriber("/green_object_coordinates", PointStamped, self.coord_callback)
     def getCoords(self, request, context):
-        global coords
         return coord_pb2.PointStamped(
             header=coord_pb2.PointStamped.Header(
-                seq=coords.header.seq,
-                stamp=int(coords.header.stamp.to_sec()),
-                frame_id=coords.header.frame_id
+                seq=self.coords.header.seq,
+                stamp=int(self.coords.header.stamp.to_sec()),
+                frame_id=self.coords.header.frame_id
             ),
             point=coord_pb2.PointStamped.Point(
-                x=coords.point.x,
-                y=coords.point.y,
-                z=coords.point.z
+                x=self.coords.point.x,
+                y=self.coords.point.y,
+                z=self.coords.point.z
             )
         )
+    def coord_callback(self,data):
+        self.coords = data
 
 def terminate_server(signum, frame):
     print(f'Handling signal {signum} ({signal.Signals(signum).name}).')
@@ -36,18 +40,16 @@ def terminate_server(signum, frame):
     sys.exit(0)
 
 
-def coord_callback(data):
-    global coords
-    coords = data
+
 
 
 def serve():
     port = '50051'
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     coord_pb2_grpc.add_CoordsCommServicer_to_server(Comm(), server)
-    rospy.Subscriber("/green_object_coordinates", PointStamped, coord_callback)
     
-    server.add_insecure_port('localhost:' + port)
+    
+    server.add_insecure_port('127.0.0.1:' + port)
     server.start()
     print("Server started, listening on " + port)
 

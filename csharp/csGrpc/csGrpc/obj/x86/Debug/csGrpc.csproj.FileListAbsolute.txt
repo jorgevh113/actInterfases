@@ -1,0 +1,16 @@
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/grpc_csharp_ext.x86.dll
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/grpc_csharp_ext.x64.dll
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/libgrpc_csharp_ext.x86.so
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/libgrpc_csharp_ext.x64.so
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/libgrpc_csharp_ext.x86.dylib
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/libgrpc_csharp_ext.x64.dylib
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/csGrpc.exe
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/csGrpc.pdb
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/Google.Protobuf.dll
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/Grpc.Core.dll
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/bin/Debug/System.Interactive.Async.dll
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/obj/x86/Debug/csGrpc.csproj.AssemblyReference.cache
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/obj/x86/Debug/csGrpc.csproj.CoreCompileInputs.cache
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/obj/x86/Debug/csGrpc.csproj.CopyComplete
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/obj/x86/Debug/csGrpc.exe
+/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/obj/x86/Debug/csGrpc.pdb

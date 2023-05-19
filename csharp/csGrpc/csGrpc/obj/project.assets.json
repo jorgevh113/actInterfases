@@ -1,0 +1,368 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5": {
+      "Google.Protobuf/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "Grpc/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core": "1.2.2"
+        }
+      },
+      "Grpc.Core/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/net45/Grpc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Grpc.Core.dll": {}
+        },
+        "build": {
+          "build/net45/Grpc.Core.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux/native/libgrpc_csharp_ext.x64.so": {
+            "assetType": "native",
+            "rid": "linux"
+          },
+          "runtimes/linux/native/libgrpc_csharp_ext.x86.so": {
+            "assetType": "native",
+            "rid": "linux"
+          },
+          "runtimes/osx/native/libgrpc_csharp_ext.x64.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/osx/native/libgrpc_csharp_ext.x86.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win/native/grpc_csharp_ext.x64.dll": {
+            "assetType": "native",
+            "rid": "win"
+          },
+          "runtimes/win/native/grpc_csharp_ext.x86.dll": {
+            "assetType": "native",
+            "rid": "win"
+          }
+        }
+      },
+      "Grpc.Tools/1.2.2": {
+        "type": "package"
+      },
+      "System.Interactive.Async/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Interactive.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Interactive.Async.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win": {
+      "Google.Protobuf/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "Grpc/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core": "1.2.2"
+        }
+      },
+      "Grpc.Core/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/net45/Grpc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Grpc.Core.dll": {}
+        },
+        "native": {
+          "runtimes/win/native/grpc_csharp_ext.x64.dll": {},
+          "runtimes/win/native/grpc_csharp_ext.x86.dll": {}
+        },
+        "build": {
+          "build/net45/Grpc.Core.targets": {}
+        }
+      },
+      "Grpc.Tools/1.2.2": {
+        "type": "package"
+      },
+      "System.Interactive.Async/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Interactive.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Interactive.Async.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win-x64": {
+      "Google.Protobuf/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "Grpc/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core": "1.2.2"
+        }
+      },
+      "Grpc.Core/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/net45/Grpc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Grpc.Core.dll": {}
+        },
+        "build": {
+          "build/net45/Grpc.Core.targets": {}
+        }
+      },
+      "Grpc.Tools/1.2.2": {
+        "type": "package"
+      },
+      "System.Interactive.Async/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Interactive.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Interactive.Async.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5/win-x86": {
+      "Google.Protobuf/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Google.Protobuf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Google.Protobuf.dll": {}
+        }
+      },
+      "Grpc/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core": "1.2.2"
+        }
+      },
+      "Grpc.Core/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Interactive.Async": "3.1.1"
+        },
+        "compile": {
+          "lib/net45/Grpc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Grpc.Core.dll": {}
+        },
+        "build": {
+          "build/net45/Grpc.Core.targets": {}
+        }
+      },
+      "Grpc.Tools/1.2.2": {
+        "type": "package"
+      },
+      "System.Interactive.Async/3.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/net45/System.Interactive.Async.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Interactive.Async.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Google.Protobuf/3.2.0": {
+      "sha512": "BGF0cWDU2JhZXR5EHjbEiE3XlEeIzMjgbPch3YJqzzOYTQPotYJmFG7nureKRuGOFZ0peIGLQuPwMzN1+f1DdA==",
+      "type": "package",
+      "path": "google.protobuf/3.2.0",
+      "files": [
+        ".signature.p7s",
+        "google.protobuf.3.2.0.nupkg.sha512",
+        "google.protobuf.nuspec",
+        "lib/net45/Google.Protobuf.dll",
+        "lib/net45/Google.Protobuf.xml",
+        "lib/netstandard1.0/Google.Protobuf.dll",
+        "lib/netstandard1.0/Google.Protobuf.xml"
+      ]
+    },
+    "Grpc/1.2.2": {
+      "sha512": "jowpgOS4azYvU/cHi99q0tDH4JjB0G6oxSKalGce+mwgm6Q9TBYrpW+9wsyQJWsPSzNkUxyj2YgGwwnWHFTNEw==",
+      "type": "package",
+      "path": "grpc/1.2.2",
+      "files": [
+        ".signature.p7s",
+        "grpc.1.2.2.nupkg.sha512",
+        "grpc.nuspec"
+      ]
+    },
+    "Grpc.Core/1.2.2": {
+      "sha512": "2bXIJoJufSUFWwP/GKdt7QrERHMN+5GDZieC9BZyfYSo63yV7JPWms9JdaLYpRLQ++yubf4zPbgdDiNi7I+mWQ==",
+      "type": "package",
+      "path": "grpc.core/1.2.2",
+      "files": [
+        ".signature.p7s",
+        "build/net45/Grpc.Core.targets",
+        "grpc.core.1.2.2.nupkg.sha512",
+        "grpc.core.nuspec",
+        "lib/net45/Grpc.Core.dll",
+        "lib/net45/Grpc.Core.xml",
+        "lib/netstandard1.5/Grpc.Core.dll",
+        "lib/netstandard1.5/Grpc.Core.xml",
+        "runtimes/linux/native/libgrpc_csharp_ext.x64.so",
+        "runtimes/linux/native/libgrpc_csharp_ext.x86.so",
+        "runtimes/osx/native/libgrpc_csharp_ext.x64.dylib",
+        "runtimes/osx/native/libgrpc_csharp_ext.x86.dylib",
+        "runtimes/win/native/grpc_csharp_ext.x64.dll",
+        "runtimes/win/native/grpc_csharp_ext.x86.dll"
+      ]
+    },
+    "Grpc.Tools/1.2.2": {
+      "sha512": "y+56PZMlAdg1IEMvuejX9sk9gbFh54ZBlJDaqBud/YGtonu+yaYOvBB/dVEsqDm0E6AHTKN/U1O1jlMcwwsOtw==",
+      "type": "package",
+      "path": "grpc.tools/1.2.2",
+      "files": [
+        ".signature.p7s",
+        "grpc.tools.1.2.2.nupkg.sha512",
+        "grpc.tools.nuspec",
+        "tools/linux_x64/grpc_csharp_plugin",
+        "tools/linux_x64/protoc",
+        "tools/linux_x86/grpc_csharp_plugin",
+        "tools/linux_x86/protoc",
+        "tools/macosx_x64/grpc_csharp_plugin",
+        "tools/macosx_x64/protoc",
+        "tools/macosx_x86/grpc_csharp_plugin",
+        "tools/macosx_x86/protoc",
+        "tools/windows_x64/grpc_csharp_plugin.exe",
+        "tools/windows_x64/protoc.exe",
+        "tools/windows_x86/grpc_csharp_plugin.exe",
+        "tools/windows_x86/protoc.exe"
+      ]
+    },
+    "System.Interactive.Async/3.1.1": {
+      "sha512": "x9y2omkjEudKbIVuhUzeWw7ZlouEzpk4W98woCEq1lq9gJxERBKRKDTHF5JPEws9E0f4/Uei/2vLxEy1IrfmMg==",
+      "type": "package",
+      "path": "system.interactive.async/3.1.1",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/System.Interactive.Async.dll",
+        "lib/net45/System.Interactive.Async.xml",
+        "lib/net46/System.Interactive.Async.dll",
+        "lib/net46/System.Interactive.Async.xml",
+        "lib/netstandard1.0/System.Interactive.Async.dll",
+        "lib/netstandard1.0/System.Interactive.Async.xml",
+        "lib/netstandard1.3/System.Interactive.Async.dll",
+        "lib/netstandard1.3/System.Interactive.Async.xml",
+        "system.interactive.async.3.1.1.nupkg.sha512",
+        "system.interactive.async.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5": [
+      "Google.Protobuf >= 3.2.0",
+      "Grpc >= 1.2.2",
+      "Grpc.Core >= 1.2.2",
+      "Grpc.Tools >= 1.2.2"
+    ]
+  },
+  "packageFolders": {
+    "/home/javh/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/csGrpc.csproj",
+      "projectName": "csGrpc",
+      "projectPath": "/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/csGrpc.csproj",
+      "packagesPath": "/home/javh/.nuget/packages/",
+      "outputPath": "/home/javh/Documents/octavo/arturo/actInterfases/csharp/csGrpc/csGrpc/obj/",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "/home/javh/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net45"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net45": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net45": {
+        "dependencies": {
+          "Google.Protobuf": {
+            "target": "Package",
+            "version": "[3.2.0, )"
+          },
+          "Grpc": {
+            "target": "Package",
+            "version": "[1.2.2, )"
+          },
+          "Grpc.Core": {
+            "target": "Package",
+            "version": "[1.2.2, )"
+          },
+          "Grpc.Tools": {
+            "target": "Package",
+            "version": "[1.2.2, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

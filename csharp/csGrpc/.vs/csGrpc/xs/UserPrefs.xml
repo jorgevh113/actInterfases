@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{E31EAFCB-5B26-4D4B-8AE7-1369C98C9479}|Default">
+  <MonoDevelop.Ide.ItemProperties.csGrpc PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="csGrpc/Properties/AssemblyInfo.cs">
+    <Files>
+      <File FileName="csGrpc/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="csGrpc/Program.cs" Line="9" Column="9" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="csGrpc" expanded="True">
+            <Node name="csGrpc" expanded="True">
+              <Node name="Properties" expanded="True">
+                <Node name="AssemblyInfo.cs" selected="True" />
+              </Node>
+              <Node name="protos" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

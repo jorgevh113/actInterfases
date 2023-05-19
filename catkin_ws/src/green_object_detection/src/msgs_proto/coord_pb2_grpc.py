@@ -15,7 +15,7 @@ class CoordsCommStub(object):
             channel: A grpc.Channel.
         """
         self.getCoords = channel.unary_unary(
-                '/ros_messages.CoordsComm/getCoords',
+                '/RpcDemo.CoordsComm/getCoords',
                 request_serializer=coord__pb2.Empty.SerializeToString,
                 response_deserializer=coord__pb2.PointStamped.FromString,
                 )
@@ -40,7 +40,7 @@ def add_CoordsCommServicer_to_server(servicer, server):
             ),
     }
     generic_handler = grpc.method_handlers_generic_handler(
-            'ros_messages.CoordsComm', rpc_method_handlers)
+            'RpcDemo.CoordsComm', rpc_method_handlers)
     server.add_generic_rpc_handlers((generic_handler,))
 
 
@@ -59,7 +59,7 @@ class CoordsComm(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/ros_messages.CoordsComm/getCoords',
+        return grpc.experimental.unary_unary(request, target, '/RpcDemo.CoordsComm/getCoords',
             coord__pb2.Empty.SerializeToString,
             coord__pb2.PointStamped.FromString,
             options, channel_credentials,
