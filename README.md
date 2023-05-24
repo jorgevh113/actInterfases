@@ -33,7 +33,7 @@ Ya en la carpeta de Go, se ejecuta en terminal:
 ```
 go run server/serverPS.go
 ```
-
+## Ejecutar servidor implementado en Flask con Python
 Finalmente, hay que pasar a la carpeta de flask y ejecutar el código para poner en marcha el servidor
 
 ```
