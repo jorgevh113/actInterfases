@@ -1,0 +1,6 @@
+POST http://localhost:8081/echo
+Content-Type: application/json
+
+{
+    "msg":"Helen"
+}

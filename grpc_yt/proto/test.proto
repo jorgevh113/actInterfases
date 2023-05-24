@@ -1,0 +1,59 @@
+syntax = "proto3";
+
+package RpcDemo;
+
+option go_package = "./proto";
+
+import "google/api/annotations.proto";
+
+service TestApi{
+    rpc Echo(ResponseRequest) returns (ResponseRequest){
+        option (google.api.http) = {
+            get: "/echo/{id}"
+        };
+    }
+    rpc GetUser(UserRequest) returns (UserResponse){}
+}
+
+service CoordsComm{
+  rpc GetCoords(Empty) returns (PointStamped) {
+    option (google.api.http) = {
+        get: "/coords"
+    };
+  }
+}
+
+message PointStamped {
+
+  message Point{
+    float x = 1;
+    float y = 2;
+    float z = 3;
+  }
+
+  message Header {
+  uint32 seq = 1;
+  uint64 stamp = 2;
+  string frame_id = 3;
+  }
+  
+
+  Header header = 1;
+  Point point = 2;
+}
+
+message Empty{}
+
+message ResponseRequest{
+    int32 id = 1;
+}
+
+message UserRequest{
+    string uuid = 1;
+}
+
+message UserResponse{
+    string name = 1;
+    int32 age = 2;
+    string email = 3; 
+}

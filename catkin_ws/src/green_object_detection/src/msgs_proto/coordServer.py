@@ -16,7 +16,7 @@ class Comm(coord_pb2_grpc.CoordsCommServicer):
     def __init__(self):
         self.coords = PointStamped()
         rospy.Subscriber("/green_object_coordinates", PointStamped, self.coord_callback)
-    def getCoords(self, request, context):
+    def GetCoords(self, request, context):
         return coord_pb2.PointStamped(
             header=coord_pb2.PointStamped.Header(
                 seq=self.coords.header.seq,
@@ -26,7 +26,7 @@ class Comm(coord_pb2_grpc.CoordsCommServicer):
             point=coord_pb2.PointStamped.Point(
                 x=self.coords.point.x,
                 y=self.coords.point.y,
-                z=self.coords.point.z
+                z=0
             )
         )
     def coord_callback(self,data):

@@ -12,7 +12,7 @@ namespace RpcDemo
 
             var client = new CoordsComm.CoordsCommClient(channel);
             while (true){
-                var reply = client.getCoords(new RpcDemo.Empty {});
+                var reply = client.GetCoords(new RpcDemo.Empty {});
                 Console.WriteLine(reply);
             }
             //channel.ShutdownAsync().Wait();

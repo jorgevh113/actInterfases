@@ -27,7 +27,7 @@ namespace RpcDemo {
             "CgVwb2ludBgCIAEoCzIbLlJwY0RlbW8uUG9pbnRTdGFtcGVkLlBvaW50GigK",
             "BVBvaW50EgkKAXgYASABKAISCQoBeRgCIAEoAhIJCgF6GAMgASgCGjYKBkhl",
             "YWRlchILCgNzZXEYASABKA0SDQoFc3RhbXAYAiABKAQSEAoIZnJhbWVfaWQY",
-            "AyABKAkiBwoFRW1wdHkyQgoKQ29vcmRzQ29tbRI0CglnZXRDb29yZHMSDi5S",
+            "AyABKAkiBwoFRW1wdHkyQgoKQ29vcmRzQ29tbRI0CglHZXRDb29yZHMSDi5S",
             "cGNEZW1vLkVtcHR5GhUuUnBjRGVtby5Qb2ludFN0YW1wZWQiAGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },

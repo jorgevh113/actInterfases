@@ -15,10 +15,10 @@ namespace RpcDemo {
     static readonly grpc::Marshaller<global::RpcDemo.Empty> __Marshaller_Empty = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::RpcDemo.Empty.Parser.ParseFrom);
     static readonly grpc::Marshaller<global::RpcDemo.PointStamped> __Marshaller_PointStamped = grpc::Marshallers.Create((arg) => global::Google.Protobuf.MessageExtensions.ToByteArray(arg), global::RpcDemo.PointStamped.Parser.ParseFrom);
 
-    static readonly grpc::Method<global::RpcDemo.Empty, global::RpcDemo.PointStamped> __Method_getCoords = new grpc::Method<global::RpcDemo.Empty, global::RpcDemo.PointStamped>(
+    static readonly grpc::Method<global::RpcDemo.Empty, global::RpcDemo.PointStamped> __Method_GetCoords = new grpc::Method<global::RpcDemo.Empty, global::RpcDemo.PointStamped>(
         grpc::MethodType.Unary,
         __ServiceName,
-        "getCoords",
+        "GetCoords",
         __Marshaller_Empty,
         __Marshaller_PointStamped);
 
@@ -31,7 +31,7 @@ namespace RpcDemo {
     /// <summary>Base class for server-side implementations of CoordsComm</summary>
     public abstract partial class CoordsCommBase
     {
-      public virtual global::System.Threading.Tasks.Task<global::RpcDemo.PointStamped> getCoords(global::RpcDemo.Empty request, grpc::ServerCallContext context)
+      public virtual global::System.Threading.Tasks.Task<global::RpcDemo.PointStamped> GetCoords(global::RpcDemo.Empty request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
       }
@@ -61,21 +61,21 @@ namespace RpcDemo {
       {
       }
 
-      public virtual global::RpcDemo.PointStamped getCoords(global::RpcDemo.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual global::RpcDemo.PointStamped GetCoords(global::RpcDemo.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return getCoords(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetCoords(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual global::RpcDemo.PointStamped getCoords(global::RpcDemo.Empty request, grpc::CallOptions options)
+      public virtual global::RpcDemo.PointStamped GetCoords(global::RpcDemo.Empty request, grpc::CallOptions options)
       {
-        return CallInvoker.BlockingUnaryCall(__Method_getCoords, null, options, request);
+        return CallInvoker.BlockingUnaryCall(__Method_GetCoords, null, options, request);
       }
-      public virtual grpc::AsyncUnaryCall<global::RpcDemo.PointStamped> getCoordsAsync(global::RpcDemo.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
+      public virtual grpc::AsyncUnaryCall<global::RpcDemo.PointStamped> GetCoordsAsync(global::RpcDemo.Empty request, grpc::Metadata headers = null, DateTime? deadline = null, CancellationToken cancellationToken = default(CancellationToken))
       {
-        return getCoordsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+        return GetCoordsAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
       }
-      public virtual grpc::AsyncUnaryCall<global::RpcDemo.PointStamped> getCoordsAsync(global::RpcDemo.Empty request, grpc::CallOptions options)
+      public virtual grpc::AsyncUnaryCall<global::RpcDemo.PointStamped> GetCoordsAsync(global::RpcDemo.Empty request, grpc::CallOptions options)
       {
-        return CallInvoker.AsyncUnaryCall(__Method_getCoords, null, options, request);
+        return CallInvoker.AsyncUnaryCall(__Method_GetCoords, null, options, request);
       }
       /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
       protected override CoordsCommClient NewInstance(ClientBaseConfiguration configuration)
@@ -89,7 +89,7 @@ namespace RpcDemo {
     public static grpc::ServerServiceDefinition BindService(CoordsCommBase serviceImpl)
     {
       return grpc::ServerServiceDefinition.CreateBuilder()
-          .AddMethod(__Method_getCoords, serviceImpl.getCoords).Build();
+          .AddMethod(__Method_GetCoords, serviceImpl.GetCoords).Build();
     }
 
   }
