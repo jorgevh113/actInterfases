@@ -1,5 +1,4 @@
-# actInterfases
-Actividad de interfases
+# Actividad Interfases
 
 ## Ejecutar el launch file para detección del objeto verde
 
@@ -21,4 +20,22 @@ roslaunch green_object_detection object_detection.launch
 ```
 cd ../csharp/csGrpc/csGrpc/bin/Debug/
 mono csGrpc.exe
+```
+
+## Ejecutar servidor gRPC REST de Go
+Para ejecutar el servidor primero hay que volver al root del repositorio y entrar en la carpeta de Go
+```
+cd ../../../../../grpc_yt
+```
+
+Ya en la carpeta de Go, se ejecuta en terminal:
+
+```
+go run server/serverPS.go
+```
+
+Finalmente, hay que pasar a la carpeta de flask y ejecutar el código para poner en marcha el servidor
+
+```
+python3 conn.py
 ```
