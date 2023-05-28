@@ -25,7 +25,7 @@ mono csGrpc.exe
 ## Ejecutar servidor gRPC REST de Go
 Para ejecutar el servidor primero hay que volver al root del repositorio y entrar en la carpeta de Go
 ```
-cd ../../../../../grpc_yt
+cd ../../../../../grpcgw
 ```
 
 Ya en la carpeta de Go, se ejecuta en terminal:
