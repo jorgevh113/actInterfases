@@ -39,3 +39,5 @@ Finalmente, hay que pasar a la carpeta de flask y ejecutar el código para poner
 ```
 python3 conn.py
 ```
+
+La página será visible en `http://localhost:50000/call-go-api`

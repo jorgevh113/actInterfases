@@ -38,7 +38,7 @@ class GreenObjectDetector:
                 
                 self.coord.point.x = coordX.value
                 self.coord.point.y = coordY.value
-                self.coord.point.z = coordZ.value
+                self.coord.point.z = 0
                 self.coord.header.stamp = rospy.Time.now()
                 self.pub_coord.publish(self.coord)
         cv2.imshow("Green Object Detector", cv_image)
