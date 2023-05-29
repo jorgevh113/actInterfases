@@ -1,0 +1,49 @@
+\chapter{Actividad Interfases}
+\label{md__r_e_a_d_m_e}\index{Actividad Interfases@{Actividad Interfases}}
+\label{md__r_e_a_d_m_e_autotoc_md0}%
+ \doxysection{Ejecutar el launch file para detección del objeto verde}\label{md__r_e_a_d_m_e_autotoc_md1}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ catkin\_ws}
+\DoxyCodeLine{source\ devel/setup.bash}
+\DoxyCodeLine{roslaunch\ green\_object\_detection\ object\_detection.launch}
+
+\end{DoxyCode}
+\doxysubsection{Este launch file inicializa tres nodos\+:}\label{md__r_e_a_d_m_e_autotoc_md2}
+{\bfseries{1. publish\+\_\+image.\+py\+:}} Inicializa el nodo para publicar imagen de la cámara en el tópico $\ast$/camera/image\+\_\+raw$\ast$
+
+{\bfseries{2. green\+\_\+object\+\_\+detection.\+py\+:}} Inicializa el nodo para la detección de objetos verdes en la imagen, usa una librería .so para multiplicar las coordenadas y publica el resultado en el tópico $\ast$/green\+\_\+object\+\_\+coordinates$\ast$
+
+{\bfseries{3. coord\+Server.\+py\+:}} Inicializa un nodo para levantar un servidor g\+RPC que recibe un mensaje vacío y devuelve las coordenadas obtenidas del tópico de las coordenadas del objeto\doxysubsection{Ejecutar el cliente en CSharp para obtener las coordenadas del objeto}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ ../csharp/csGrpc/csGrpc/bin/Debug/}
+\DoxyCodeLine{mono\ csGrpc.exe}
+
+\end{DoxyCode}
+\doxysection{Ejecutar servidor g\+RPC REST de Go}\label{md__r_e_a_d_m_e_autotoc_md4}
+Para ejecutar el servidor primero hay que volver al root del repositorio y entrar en la carpeta de Go 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{cd\ ../../../../../grpcgw}
+
+\end{DoxyCode}
+
+
+Ya en la carpeta de Go, se ejecuta en terminal\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{go\ run\ server/serverPS.go}
+
+\end{DoxyCode}
+ \doxysection{Ejecutar servidor implementado en Flask con Python}\label{md__r_e_a_d_m_e_autotoc_md5}
+Finalmente, hay que pasar a la carpeta de flask y ejecutar el código para poner en marcha el servidor
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{python3\ conn.py}
+
+\end{DoxyCode}
+
+
+La página será visible en {\ttfamily {\texttt{ http\+://localhost\+:50000/call-\/go-\/api}}} 

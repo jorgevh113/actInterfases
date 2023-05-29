@@ -34,7 +34,6 @@ class Comm(coord_pb2_grpc.CoordsCommServicer):
 
 def terminate_server(signum, frame):
     print(f'Handling signal {signum} ({signal.Signals(signum).name}).')
-
     # do whatever...
     time.sleep(1)
     sys.exit(0)
