@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.28)  28 MAY 2023 16:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2023.5.28)  28 MAY 2023 23:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -740,36 +740,46 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 10.79993pt on input line 12.
-) [1
+ [1
 
-] [2
+] [2]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 68.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 68.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 68.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 6.29996pt on input line 68.
+) [3] [4
 
 ]
 (./refman.ind
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 22.39185pt on input line 1.
- [3
+ [5
 
 
 
 ]) (./refman.aux) ) 
 Here is how much of TeX's memory you used:
- 10251 strings out of 483183
- 150712 string characters out of 5966292
- 416674 words of memory out of 5000000
- 25054 multiletter control sequences out of 15000+600000
- 567064 words of font info for 62 fonts, out of 8000000 for 9000
+ 10271 strings out of 483183
+ 151190 string characters out of 5966292
+ 418808 words of memory out of 5000000
+ 25072 multiletter control sequences out of 15000+600000
+ 571879 words of font info for 65 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,11n,96p,891b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,11n,96p,891b,351s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on refman.pdf (7 pages, 42782 bytes).
+onts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (9 pages, 55904 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 55 PDF objects out of 1000 (max. 8388607)
+ 38 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

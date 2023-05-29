@@ -1,8 +1,20 @@
 \@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
 \contentsline {chapter}{\numberline {1}Actividad Interfases}{1}%
-\contentsline {section}{\numberline {1.1}Ejecutar el launch file para detección del objeto verde}{1}%
-\contentsline {subsection}{\numberline {1.1.1}Este launch file inicializa tres nodos\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}:}{1}%
-\contentsline {subsection}{\numberline {1.1.2}Ejecutar el cliente en CSharp para obtener las coordenadas del objeto}{1}%
-\contentsline {section}{\numberline {1.2}Ejecutar servidor g\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RPC REST de Go}{1}%
-\contentsline {section}{\numberline {1.3}Ejecutar servidor implementado en Flask con Python}{1}%
-\contentsline {chapter}{Index}{3}%
+\contentsline {section}{\numberline {1.1}Detección del objeto verde}{1}%
+\contentsline {subsection}{\numberline {1.1.1}Nodos del launch file}{1}%
+\contentsline {subsection}{\numberline {1.1.2}Cliente en CSharp para obtener las coordenadas del objeto}{1}%
+\contentsline {section}{\numberline {1.2}Servidor g\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RPC REST de Go}{1}%
+\contentsline {section}{\numberline {1.3}Servidor implementado en Flask con Python}{1}%
+\contentsline {section}{\numberline {1.4}Diagrama de Flujo de Datos}{2}%
+\contentsline {section}{\numberline {1.5}Aplicación Flask}{2}%
+\contentsline {section}{\numberline {1.6}g\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}RPC Gateway}{2}%
+\contentsline {subsection}{\numberline {1.6.1}Carpeta Server}{2}%
+\contentsline {section}{\numberline {1.7}Proyecto de CSharp}{2}%
+\contentsline {subsection}{\numberline {1.7.1}Paquetes del proyecto}{2}%
+\contentsline {subsection}{\numberline {1.7.2}Compilcación del ejecutable}{2}%
+\contentsline {section}{\numberline {1.8}Workspace de los nodos de ROS}{2}%
+\contentsline {subsection}{\numberline {1.8.1}Paquete green\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}object\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}detection}{2}%
+\contentsline {subsection}{\numberline {1.8.2}Carpeta msgs\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}proto}{3}%
+\contentsline {subsection}{\numberline {1.8.3}Carpeta system\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Object}{3}%
+\contentsline {subsection}{\numberline {1.8.4}Carpeta src}{3}%
+\contentsline {chapter}{Index}{5}%
