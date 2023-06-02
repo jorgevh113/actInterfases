@@ -47,7 +47,6 @@ def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
     coord_pb2_grpc.add_CoordsCommServicer_to_server(Comm(), server)
     
-    
     server.add_insecure_port('127.0.0.1:' + port)
     server.start()
     print("Server started, listening on " + port)
