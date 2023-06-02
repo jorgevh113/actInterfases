@@ -13,7 +13,7 @@ def run():
     # of the code.
     with grpc.insecure_channel('localhost:50051') as channel:
         stub = coord_pb2_grpc.CoordsCommStub(channel)
-        response = stub.getCoords(coord_pb2.Empty())
+        response = stub.GetCoords(coord_pb2.Empty())
         print("Coords received: " + str(response))
 
 
